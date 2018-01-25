@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - iThemes Security (formerly Better WP Security) - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-11-09 23:17:57+0000\n"
+"PO-Revision-Date: 2018-01-10 17:31:04+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,16 @@ msgstr ""
 "X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: en_CA\n"
 "Project-Id-Version: Plugins - iThemes Security (formerly Better WP Security) - Stable (latest release)\n"
+
+#: core/modules/global/active.php:84
+msgid "The %l define is deprecated. Please use %s instead."
+msgid_plural "The %l defines are deprecated. Please use %s instead."
+msgstr[0] "The %l define is deprecated. Please use %s instead."
+msgstr[1] "The %l defines are deprecated. Please use %s instead."
+
+#: core/lib/class-itsec-scheduler-cron.php:16
+msgid "Four Times per Day"
+msgstr "Four Times per Day"
 
 #: core/response.php:285
 msgid "New notifications available in the %1$sNotification Center%2$s."
@@ -56,24 +66,24 @@ msgid "During periods of heavy attack, iThemes Security can generate a LOT of em
 msgstr "During periods of heavy attack, iThemes Security can generate a LOT of email."
 
 #. translators: 1: user display name, 2: user login
-#: core/modules/notification-center/validator.php:253
+#: core/modules/notification-center/validator.php:252
 msgid "%1$s (%2$s)"
 msgstr "%1$s (%2$s)"
 
 #. translators: %1$s notification label, %2$l list of unknown tags.
-#: core/modules/notification-center/validator.php:203
+#: core/modules/notification-center/validator.php:202
 msgid "Unknown tags for %1$s, %2$l."
 msgstr "Unknown tags for %1$s, %2$l."
 
-#: core/modules/notification-center/validator.php:144
+#: core/modules/notification-center/validator.php:143
 msgid "Unknown schedule for %1$s, %2$s."
 msgstr "Unknown schedule for %1$s, %2$s."
 
-#: core/modules/notification-center/validator.php:90
+#: core/modules/notification-center/validator.php:89
 msgid "The %1$s email list must be a string with each entry separated by a new line."
 msgstr "The %1$s email list must be a string with each entry separated by a new line."
 
-#: core/modules/notification-center/validator.php:68
+#: core/modules/notification-center/validator.php:67
 msgid "Unknown contacts for %1$s, %2$l."
 msgstr "Unknown contacts for %1$s, %2$l."
 
@@ -166,10 +176,12 @@ msgstr "Manage and configure email notifications sent by iThemes Security relate
 msgid "Manage and configure email notifications sent by iThemes Security related to various settings modules."
 msgstr "Manage and configure email notifications sent by iThemes Security related to various settings modules."
 
+#: core/lib/class-itsec-scheduler-cron.php:24
 #: core/modules/notification-center/class-notification-center.php:1048
 msgid "Monthly"
 msgstr "Monthly"
 
+#: core/lib/class-itsec-scheduler-cron.php:20
 #: core/modules/notification-center/class-notification-center.php:1047
 msgid "Weekly"
 msgstr "Weekly"
@@ -183,11 +195,11 @@ msgstr "Cannot get lock."
 msgid "Notification Center"
 msgstr "Notification Centre"
 
-#: core/modules/hide-backend/validator.php:86
+#: core/modules/hide-backend/settings.php:52
 msgid "Login Now"
 msgstr "Login Now"
 
-#: core/modules/hide-backend/validator.php:80
+#: core/modules/hide-backend/settings.php:46
 msgid "New Login URL"
 msgstr "New Login URL"
 
@@ -239,32 +251,32 @@ msgstr "A file (or files) on your site have been changed. Please review the repo
 msgid "File Scan Report for %s"
 msgstr "File Scan Report for %s"
 
-#: core/modules/file-change/class-itsec-file-change.php:203
+#: core/modules/file-change/class-itsec-file-change.php:194
 #: core/modules/file-change/scanner.php:541
 msgid "File Change Warning"
 msgstr "File Change Warning"
 
-#: core/modules/file-change/class-itsec-file-change.php:202
+#: core/modules/file-change/class-itsec-file-change.php:193
 msgid "The %1$sFile Change Detection%2$s module will email a file scan report after changes have been detected."
 msgstr "The %1$sFile Change Detection%2$s module will email a file scan report after changes have been detected."
 
-#: core/modules/file-change/class-itsec-file-change.php:201
+#: core/modules/file-change/class-itsec-file-change.php:192
 msgid "File Change"
 msgstr "File Change"
 
-#: core/modules/backup/class-itsec-backup.php:363
+#: core/modules/backup/class-itsec-backup.php:368
 msgid "The %1$sDatabase Backup%2$s module will send a copy of any backups to the email addresses listed below."
 msgstr "The %1$sDatabase Backup%2$s module will send a copy of any backups to the email addresses listed below."
 
-#: core/modules/backup/class-itsec-backup.php:286
+#: core/modules/backup/class-itsec-backup.php:277
 msgid "Site Database Backup for %s"
 msgstr "Site Database Backup for %s"
 
-#: core/lockout.php:1178
+#: core/lockout.php:1201
 msgid "Various modules send emails to notify you when a user or host is locked out of your website."
 msgstr "Various modules send emails to notify you when a user or host is locked out of your website."
 
-#: core/lockout.php:1177
+#: core/lockout.php:1200
 msgid "Site Lockouts"
 msgstr "Site Lockouts"
 
@@ -350,7 +362,7 @@ msgstr "Send an email with a Magic Link that bypasses a username lockout."
 msgid "Magic Links"
 msgstr "Magic Links"
 
-#: core/lockout.php:466
+#: core/lockout.php:469
 msgid "Error."
 msgstr "Error."
 
@@ -443,7 +455,7 @@ msgstr "The updates_optin value is missing."
 msgid "The email value is missing."
 msgstr "The email value is missing."
 
-#: core/modules/global/active.php:64
+#: core/modules/global/active.php:68
 msgid "The ITSEC_DISABLE_MODULES define is set. All iThemes Security protections are disabled. Please make the necessary settings changes and remove the define as quickly as possible."
 msgstr "The ITSEC_DISABLE_MODULES define is set. All iThemes Security protections are disabled. Please make the necessary settings changes and remove the define as quickly as possible."
 
@@ -451,7 +463,7 @@ msgstr "The ITSEC_DISABLE_MODULES define is set. All iThemes Security protection
 msgid "<span>WARNING: </span><a href=\"%1$s\" data-module-link=\"backup\">Backup your database</a> before using this tool."
 msgstr "<span>WARNING: </span><a href=\"%1$s\" data-module-link=\"backup\">Backup your database</a> before using this tool."
 
-#: core/lockout.php:526
+#: core/lockout.php:541
 msgid "Your lockout settings can be configured in <a href=\"%s\" data-module-link=\"global\">Global Settings</a>."
 msgstr "Your lockout settings can be configured in <a href=\"%s\" data-module-link=\"global\">Global Settings</a>."
 
@@ -531,11 +543,11 @@ msgstr "Changed the Authentication Methods Available to Users setting in Two-Fac
 msgid "IP Flagged by Network Brute Force Protection"
 msgstr "IP Flagged by Network Brute Force Protection"
 
-#: core/modules/backup/class-itsec-backup.php:139
+#: core/modules/backup/class-itsec-backup.php:130
 msgid "Unable to write the backup file. This may be due to a permissions or disk space issue."
 msgstr "Unable to write the backup file. This may be due to a permissions or disk space issue."
 
-#: core/modules/backup/class-itsec-backup.php:133
+#: core/modules/backup/class-itsec-backup.php:124
 msgid "Unable to create the backup directory due to an unknown error."
 msgstr "Unable to create the backup directory due to an unknown error."
 
@@ -619,19 +631,19 @@ msgstr "<b>Host:</b> %1$s"
 msgid "<b>User:</b> %1$s"
 msgstr "<b>User:</b> %1$s"
 
-#: core/lockout.php:1254
+#: core/lockout.php:1277
 msgid "Visit Banned Users Settings"
 msgstr "Visit Banned Users Settings"
 
-#: core/lockout.php:1253
+#: core/lockout.php:1276
 msgid "Release the permanent host ban from Ban Hosts list in the Banned Users section of the settings page."
 msgstr "Release the permanent host ban from Ban Hosts list in the Banned Users section of the settings page."
 
-#: core/lockout.php:1249
+#: core/lockout.php:1272
 msgid "Visit Settings Page"
 msgstr "Visit Settings Page"
 
-#: core/lockout.php:1248
+#: core/lockout.php:1271
 msgid "Release lockouts from the Active Lockouts section of the settings page."
 msgstr "Release lockouts from the Active Lockouts section of the settings page."
 
@@ -667,17 +679,17 @@ msgstr "Disable PHP execution in the themes directory. This blocks requests to P
 msgid "Disable PHP in Themes"
 msgstr "Disable PHP in Themes"
 
-#: core/modules/backup/class-itsec-backup.php:286
-#: core/modules/backup/class-itsec-backup.php:362
-#: core/modules/backup/class-itsec-backup.php:364
+#: core/modules/backup/class-itsec-backup.php:277
+#: core/modules/backup/class-itsec-backup.php:367
+#: core/modules/backup/class-itsec-backup.php:369
 msgid "Database Backup"
 msgstr "Database Backup"
 
-#: core/modules/backup/class-itsec-backup.php:287
+#: core/modules/backup/class-itsec-backup.php:278
 msgid "Attached is the database backup file for your site."
 msgstr "Attached is the database backup file for your site."
 
-#: core/modules/backup/class-itsec-backup.php:290
+#: core/modules/backup/class-itsec-backup.php:281
 msgid "Website"
 msgstr "Website"
 
@@ -1197,11 +1209,11 @@ msgstr "Join a network of sites that reports and protects against bad actors on 
 msgid "Network Brute Force Protection"
 msgstr "Network Brute Force Protection"
 
-#: core/modules/hide-backend/validator.php:58
+#: core/modules/hide-backend/validator.php:57
 msgid "The Hide Backend feature is now disabled. Your new login URL is <strong><code>%1$s</code></strong>. A reminder has also been sent to the notification email addresses set in iThemes Security's Notification Center."
 msgstr "The Hide Backend feature is now disabled. Your new login URL is <strong><code>%1$s</code></strong>. A reminder has also been sent to the notification email addresses set in iThemes Security's Notification Center."
 
-#: core/modules/hide-backend/validator.php:55
+#: core/modules/hide-backend/validator.php:54
 msgid "The Hide Backend feature is now active. Your new login URL is <strong><code>%1$s</code></strong>. A reminder has also been sent to the notification email addresses set in iThemes Security's Notification Center."
 msgstr "The Hide Backend feature is now active. Your new login URL is <strong><code>%1$s</code></strong>. A reminder has also been sent to the notification email addresses set in iThemes Security's Notification Centre."
 
@@ -1225,7 +1237,7 @@ msgstr "You must change <a href=\"%s\">WordPress permalinks</a> to a setting oth
 msgid "Hide the login page by changing its name and preventing access to wp-login.php and wp-admin."
 msgstr "Hide the login page by changing its name and preventing access to wp-login.php and wp-admin."
 
-#: core/modules/global/validator.php:41
+#: core/modules/global/validator.php:42
 msgid "Blacklist Lockout Period"
 msgstr "Blacklist Lockout Period"
 
@@ -1234,7 +1246,7 @@ msgid "Each error message in iThemes Security has an associated error code that 
 msgstr "Each error message in iThemes Security has an associated error code that can help diagnose an issue. Changing this setting to \"Yes\" causes these codes to display. This setting should be left set to \"No\" unless iThemes Security support requests that you change it."
 
 #: core/modules/global/settings-page.php:231
-#: core/modules/global/validator.php:32
+#: core/modules/global/validator.php:33
 msgid "Show Error Codes"
 msgstr "Show Error Codes"
 
@@ -1270,11 +1282,11 @@ msgstr "The following settings modify the behavior of many of the features offer
 msgid "Configure basic settings that control how iThemes Security functions."
 msgstr "Configure basic settings that control how iThemes Security functions."
 
-#: core/modules/global/active.php:24
+#: core/modules/global/active.php:28
 msgid "See what's new"
 msgstr "See what's new"
 
-#: core/modules/global/active.php:23
+#: core/modules/global/active.php:27
 msgid "New! The iThemes Security dashboard just got a new look."
 msgstr "New! The iThemes Security dashboard just got a new look."
 
@@ -1463,7 +1475,7 @@ msgid "Block specific IP addresses and user agents from accessing the site."
 msgstr "Block specific IP addresses and user agents from accessing the site."
 
 #: core/modules/backup/validator.php:28
-#: core/modules/file-change/validator.php:30
+#: core/modules/file-change/validator.php:31
 msgid "Last Run"
 msgstr "Last Run"
 
@@ -1483,19 +1495,19 @@ msgstr "Creating Backup..."
 msgid "Create backups of your site's database. The backups can be created manually and on a schedule."
 msgstr "Create backups of your site's database. The backups can be created manually and on a schedule."
 
-#: core/modules/backup/class-itsec-backup.php:89
+#: core/modules/backup/class-itsec-backup.php:80
 msgid "Unable to create a backup at this time since a backup is currently being created. If you wish to create an additional backup, please wait a few minutes before trying again."
 msgstr "Unable to create a backup at this time since a backup is currently being created. If you wish to create an additional backup, please wait a few minutes before trying again."
 
-#: core/modules/backup/class-itsec-backup.php:104
+#: core/modules/backup/class-itsec-backup.php:95
 msgid "Backup complete. The backup was saved locally."
 msgstr "Backup complete. The backup was saved locally."
 
-#: core/modules/backup/class-itsec-backup.php:102
+#: core/modules/backup/class-itsec-backup.php:93
 msgid "Backup complete. The backup was sent to the selected email recipients."
 msgstr "Backup complete. The backup was sent to the selected email recipients."
 
-#: core/modules/backup/class-itsec-backup.php:100
+#: core/modules/backup/class-itsec-backup.php:91
 msgid "Backup complete. The backup was sent to the selected email recipients and was saved locally."
 msgstr "Backup complete. The backup was sent to the selected email recipients and was saved locally."
 
@@ -1609,110 +1621,110 @@ msgid "Automatically block users snooping around for pages to exploit."
 msgstr "Automatically block users snooping around for pages to exploit."
 
 #. translators: 1: sanitize type, 2: input name
-#: core/lib/validator.php:385
+#: core/lib/validator.php:393
 msgid "An invalid sanitize type of \"%1$s\" was received for the %2$s input."
 msgstr "An invalid sanitize type of \"%1$s\" was received for the %2$s input."
 
-#: core/lib/validator.php:380
+#: core/lib/validator.php:388
 msgid "The following extension in %1$s is invalid: %2$l"
 msgid_plural "The following extensions in %1$s are invalid: %2$l"
 msgstr[0] "The following extension in %1$s is invalid: %2$l"
 msgstr[1] "The following extensions in %1$s are invalid: %2$l"
 
-#: core/lib/validator.php:360
+#: core/lib/validator.php:368
 msgid "The following IP in %1$s is invalid: %2$l"
 msgid_plural "The following IPs in %1$s are invalid: %2$l"
 msgstr[0] "The following IP in %1$s is invalid: %2$l"
 msgstr[1] "The following IPs in %1$s are invalid: %2$l"
 
-#: core/lib/validator.php:328
-#: core/modules/notification-center/validator.php:108
+#: core/lib/validator.php:336
+#: core/modules/notification-center/validator.php:107
 msgid "The following email in %1$s is invalid: %2$l"
 msgid_plural "The following emails in %1$s are invalid: %2$l"
 msgstr[0] "The following email in %1$s is invalid: %2$l"
 msgstr[1] "The following emails in %1$s are invalid: %2$l"
 
-#: core/lib/validator.php:297
+#: core/lib/validator.php:305
 msgid "The valid value for %1$s is: %2$l."
 msgid_plural "The valid values for %1$s are: %2$l."
 msgstr[0] "The valid value for %1$s is: %2$l."
 msgstr[1] "The valid values for %1$s are: %2$l."
 
-#: core/lib/validator.php:273 core/lib/validator.php:294
+#: core/lib/validator.php:281 core/lib/validator.php:302
 msgid "The following entry in %1$s is invalid: %2$l"
 msgid_plural "The following entries in %1$s are invalid: %2$l"
 msgstr[0] "The following entry in %1$s is invalid: %2$l"
 msgstr[1] "The following entries in %1$s are invalid: %2$l"
 
-#: core/lib/validator.php:249 core/lib/validator.php:304
-#: core/lib/validator.php:310 core/lib/validator.php:335
-#: core/lib/validator.php:367
+#: core/lib/validator.php:257 core/lib/validator.php:312
+#: core/lib/validator.php:318 core/lib/validator.php:343
+#: core/lib/validator.php:375
 msgid "The %1$s value must be a string with each entry separated by a new line."
 msgstr "The %1$s value must be a string with each entry separated by a new line."
 
-#: core/lib/validator.php:241
+#: core/lib/validator.php:249
 msgid "The file path supplied in %1$s is not writable. Please supply a file path that can be written to."
 msgstr "The file path supplied in %1$s is not writable. Please supply a file path that can be written to."
 
-#: core/lib/validator.php:238
+#: core/lib/validator.php:246
 msgid "The file path supplied in %1$s was successfully created, but it cannot be updated. Please supply a file path that can be written to."
 msgstr "The file path supplied in %1$s was successfully created, but it cannot be updated. Please supply a file path that can be written to."
 
-#: core/lib/validator.php:236
+#: core/lib/validator.php:244
 msgid "The file path supplied in %1$s could not be created. Please supply a file path that can be written to."
 msgstr "The file path supplied in %1$s could not be created. Please supply a file path that can be written to."
 
-#: core/lib/validator.php:231
+#: core/lib/validator.php:239
 msgctxt "%1$s is the input name. %2$s is the error message."
 msgid "The file path supplied in %1$s cannot be used as the parent directory cannot be created. %2$s"
 msgstr "The file path supplied in %1$s cannot be used as the parent directory cannot be created. %2$s"
 
-#: core/lib/validator.php:226
+#: core/lib/validator.php:234
 msgid "The file path supplied in %1$s cannot be used as it already exists but is not a file. Please supply a valid file path."
 msgstr "The file path supplied in %1$s cannot be used as it already exists but is not a file. Please supply a valid file path."
 
-#: core/lib/validator.php:212
+#: core/lib/validator.php:220
 msgid "The directory supplied in %1$s is not writable. Please select a directory that can be written to."
 msgstr "The directory supplied in %1$s is not writable. Please select a directory that can be written to."
 
-#: core/lib/validator.php:207
+#: core/lib/validator.php:215
 msgctxt "%1$s is the input name. %2$s is the error message."
 msgid "The directory supplied in %1$s cannot be used as a valid directory. %2$s"
 msgstr "The directory supplied in %1$s cannot be used as a valid directory. %2$s"
 
-#: core/lib/validator.php:197 core/lib/validator.php:221
+#: core/lib/validator.php:205 core/lib/validator.php:229
 msgid "The %1$s value must be a string."
 msgstr "The %1$s value must be a string."
 
-#: core/lib/validator.php:193
+#: core/lib/validator.php:201
 msgid "The %1$s value must be a valid date in the format of YYYY-MM-DD."
 msgstr "The %1$s value must be a valid date in the format of YYYY-MM-DD."
 
-#: core/lib/validator.php:190
+#: core/lib/validator.php:198
 msgid "The %1$s value must be a valid date."
 msgstr "The %1$s value must be a valid date."
 
-#: core/lib/validator.php:177
+#: core/lib/validator.php:185
 msgid "The %1$s value is not a valid username."
 msgstr "The %1$s value is not a valid username."
 
-#: core/lib/validator.php:171
+#: core/lib/validator.php:179
 msgid "The %1$s value must be a valid email address."
 msgstr "The %1$s value must be a valid email address."
 
-#: core/lib/validator.php:165
+#: core/lib/validator.php:173
 msgid "The %1$s value must be a positive integer."
 msgstr "The %1$s value must be a positive integer."
 
-#: core/lib/validator.php:158
+#: core/lib/validator.php:166
 msgid "The %1$s value must be an integer."
 msgstr "The %1$s value must be an integer."
 
-#: core/lib/validator.php:127 core/lib/validator.php:135
+#: core/lib/validator.php:135 core/lib/validator.php:143
 msgid "The %1$s value cannot be empty."
 msgstr "The %1$s value cannot be empty."
 
-#: core/lib/validator.php:111
+#: core/lib/validator.php:119
 msgid "A validation check for %1$s failed. The %2$s value is missing. This could be due to a problem with the iThemes Security installation or an invalid modification. Please reinstall iThemes Security and try again."
 msgstr "A validation check for %1$s failed. The %2$s value is missing. This could be due to a problem with the iThemes Security installation or an invalid modification. Please reinstall iThemes Security and try again."
 
@@ -1770,27 +1782,27 @@ msgstr "Unable to find a valid settings object for %s. Settings were unable to b
 msgid "An attempt to register the %1$s module failed since the supplied path (%2$s) is invalid. This could indicate an invalid modification or incomplete installation of the iThemes Security plugin. Please reinstall the plugin and try again."
 msgstr "An attempt to register the %1$s module failed since the supplied path (%2$s) is invalid. This could indicate an invalid modification or incomplete installation of the iThemes Security plugin. Please reinstall the plugin and try again."
 
-#: core/lockout.php:540
+#: core/lockout.php:555
 msgid "<strong>Is this computer white-listed:</strong> %s"
 msgstr "<strong>Is this computer white-listed:</strong> %s"
 
-#: core/lockout.php:538
+#: core/lockout.php:553
 msgid "<strong>User lockout message:</strong> %s"
 msgstr "<strong>User lockout message:</strong> %s"
 
-#: core/lockout.php:536
+#: core/lockout.php:551
 msgid "<strong>Host lockout message:</strong> %s"
 msgstr "<strong>Host lockout message:</strong> %s"
 
-#: core/lockout.php:534
+#: core/lockout.php:549
 msgid "<strong>How long lockouts will be remembered for ban:</strong> %s"
 msgstr "<strong>How long lockouts will be remembered for ban:</strong> %s"
 
-#: core/lockout.php:532
+#: core/lockout.php:547
 msgid "<strong>Number of lockouts before permanent ban:</strong> %s"
 msgstr "<strong>Number of lockouts before permanent ban:</strong> %s"
 
-#: core/lockout.php:530
+#: core/lockout.php:545
 msgid "<strong>Permanently ban:</strong> %s"
 msgstr "<strong>Permanently ban:</strong> %s"
 
@@ -2714,11 +2726,11 @@ msgstr "The login URL slug cannot be \"login,\" \"admin,\" \"dashboard,\" or \"w
 msgid "Enable the hide backend feature."
 msgstr "Enable the hide backend feature."
 
-#: core/modules/404-detection/class-itsec-four-oh-four.php:94
+#: core/modules/404-detection/class-itsec-four-oh-four.php:93
 msgid "404 Error"
 msgstr "404 Error"
 
-#: core/modules/404-detection/class-itsec-four-oh-four.php:74
+#: core/modules/404-detection/class-itsec-four-oh-four.php:73
 msgid "too many attempts to access a file that does not exist"
 msgstr "too many attempts to access a file that does not exist"
 
@@ -2746,7 +2758,7 @@ msgstr "Query"
 msgid "File types listed here will be recorded as 404 errors but will not lead to lockouts."
 msgstr "File types listed here will be recorded as 404 errors but will not lead to lockouts."
 
-#: core/modules/404-detection/class-itsec-four-oh-four.php:114
+#: core/modules/404-detection/class-itsec-four-oh-four.php:113
 msgid "404 Errors Found"
 msgstr "404 Errors Found"
 
@@ -2794,7 +2806,7 @@ msgstr "The number of minutes in which 404 errors should be remembered and count
 msgid "404 Detection"
 msgstr "404 Detection"
 
-#: core/modules/file-change/class-itsec-file-change.php:83
+#: core/modules/file-change/class-itsec-file-change.php:74
 msgid "File Changes Detected"
 msgstr "File Changes Detected"
 
@@ -2839,7 +2851,7 @@ msgstr "Files Removed"
 msgid "There are no added files to report"
 msgstr "There are no added files to report"
 
-#: core/modules/backup/class-itsec-backup.php:293
+#: core/modules/backup/class-itsec-backup.php:284
 #: core/modules/file-change/class-itsec-file-change-log.php:117
 #: core/modules/file-change/class-itsec-file-change-log.php:135
 #: core/modules/file-change/class-itsec-file-change-log.php:153
@@ -2906,48 +2918,48 @@ msgstr "Exclude files or folders by clicking the red minus next to the file or f
 msgid "Even the best security solutions can fail. How do you know if someone gets into your site? You will know because they will change something. File Change detection will tell you what files have changed in your WordPress installation alerting you to changes not made by yourself. Unlike other solutions, this plugin will look only at your installation and compare files to the last check instead of comparing them with a remote installation thereby taking into account whether or not you modify the files yourself."
 msgstr "Even the best security solutions can fail. How do you know if someone gets into your site? You will know because they will change something. File Change detection will tell you what files have changed in your WordPress installation alerting you to changes not made by yourself. Unlike other solutions, this plugin will look only at your installation and compare files to the last check instead of comparing them with a remote installation thereby taking into account whether or not you modify the files yourself."
 
-#: core/modules/file-change/class-itsec-file-change.php:155
+#: core/modules/file-change/class-itsec-file-change.php:146
 msgid "Automatic file change scanning is triggered by a user visiting your page and may not happen exactly at the time listed."
 msgstr "Automatic file change scanning is triggered by a user visiting your page and may not happen exactly at the time listed."
 
-#: core/modules/file-change/class-itsec-file-change.php:154
+#: core/modules/file-change/class-itsec-file-change.php:145
 msgid "Next automatic scan at: "
 msgstr "Next automatic scan at: "
 
-#: core/modules/file-change/class-itsec-file-change.php:149
+#: core/modules/file-change/class-itsec-file-change.php:140
 msgid "Tomorrow"
 msgstr "Tomorrow"
 
-#: core/modules/file-change/class-itsec-file-change.php:147
+#: core/modules/file-change/class-itsec-file-change.php:138
 msgid "Today"
 msgstr "Today"
 
-#: core/modules/file-change/class-itsec-file-change.php:106
+#: core/modules/file-change/class-itsec-file-change.php:97
 msgid "File Change History"
 msgstr "File Change History"
 
 #: core/modules/file-change/settings-page.php:129
-#: core/modules/file-change/validator.php:29
+#: core/modules/file-change/validator.php:30
 msgid "Display File Change Admin Warning"
 msgstr "Display File Change Admin Warning"
 
 #: core/modules/file-change/settings-page.php:121
-#: core/modules/file-change/validator.php:28
+#: core/modules/file-change/validator.php:29
 msgid "Ignore File Types"
 msgstr "Ignore File Types"
 
 #: core/modules/file-change/settings-page.php:111
-#: core/modules/file-change/validator.php:27
+#: core/modules/file-change/validator.php:28
 msgid "Files and Folders List"
 msgstr "Files and Folders List"
 
 #: core/modules/file-change/settings-page.php:103
-#: core/modules/file-change/validator.php:26
+#: core/modules/file-change/validator.php:27
 msgid "Include/Exclude Files and Folders"
 msgstr "Include/Exclude Files and Folders"
 
 #: core/modules/file-change/settings-page.php:95
-#: core/modules/file-change/validator.php:25
+#: core/modules/file-change/validator.php:26
 msgid "Split File Scanning"
 msgstr "Split File Scanning"
 
@@ -3301,37 +3313,37 @@ msgstr "Use the guidelines below to enter user agents that will not be allowed a
 msgid "Banned Users"
 msgstr "Banned Users"
 
-#: core/modules/backup/class-itsec-backup.php:325
+#: core/modules/backup/class-itsec-backup.php:316
 msgid "Database Backup Executed"
 msgstr "Database Backup Executed"
 
-#: core/modules/backup/class-itsec-backup.php:259
+#: core/modules/backup/class-itsec-backup.php:250
 msgid "saved locally"
 msgstr "saved locally"
 
-#: core/modules/backup/class-itsec-backup.php:273
+#: core/modules/backup/class-itsec-backup.php:264
 msgid "emailed to backup recipients"
 msgstr "emailed to backup recipients"
 
-#: core/modules/backup/class-itsec-backup.php:271
+#: core/modules/backup/class-itsec-backup.php:262
 msgid "email to backup recipients could not be sent."
 msgstr "email to backup recipients could not be sent."
 
-#: core/modules/backup/class-itsec-backup.php:266
+#: core/modules/backup/class-itsec-backup.php:257
 msgid "emailed to backup recipients and saved locally"
 msgstr "emailed to backup recipients and saved locally"
 
-#: core/modules/backup/class-itsec-backup.php:258
+#: core/modules/backup/class-itsec-backup.php:249
 msgid "Success"
 msgstr "Success"
 
-#: core/modules/backup/class-itsec-backup.php:264
+#: core/modules/backup/class-itsec-backup.php:255
 msgid "saved locally but email to backup recipients could not be sent."
 msgstr "saved locally but email to backup recipients could not be sent."
 
 #: core/admin-pages/page-settings.php:116
-#: core/modules/backup/class-itsec-backup.php:263
-#: core/modules/backup/class-itsec-backup.php:270
+#: core/modules/backup/class-itsec-backup.php:254
+#: core/modules/backup/class-itsec-backup.php:261
 #: core/modules/malware/class-itsec-malware-log.php:109
 #: core/modules/malware/class-itsec-malware-scan-results-template.php:167
 msgid "Error"
@@ -3373,7 +3385,7 @@ msgstr "Save Locally and Email"
 msgid "The path on your machine where backup files should be stored."
 msgstr "The path on your machine where backup files should be stored."
 
-#: core/modules/backup/settings-page.php:151
+#: core/modules/backup/settings-page.php:150
 msgid "The number of days between database backups."
 msgstr "The number of days between database backups."
 
@@ -3427,7 +3439,7 @@ msgstr "Backup Method"
 msgid "Backup Full Database"
 msgstr "Backup Full Database"
 
-#: core/modules/backup/settings-page.php:147
+#: core/modules/backup/settings-page.php:146
 #: core/modules/backup/validator.php:27
 msgid "Backup Interval"
 msgstr "Backup Interval"
@@ -3555,7 +3567,7 @@ msgstr "WARNING"
 msgid "This feature will improve the security of your WordPress installation by removing common user attributes that can be used to target your site."
 msgstr "This feature will improve the security of your WordPress installation by removing common user attributes that can be used to target your site."
 
-#: core/admin-pages/init.php:31 core/core.php:366
+#: core/admin-pages/init.php:31 core/core.php:420
 #: core/modules/security-check/settings-page.php:9
 msgid "Security Check"
 msgstr "Security Check"
@@ -3885,47 +3897,47 @@ msgstr "Function"
 msgid "Details"
 msgstr "Details"
 
-#: core/lockout.php:1179 core/lockout.php:1244
+#: core/lockout.php:1202 core/lockout.php:1267
 msgid "Site Lockout Notification"
 msgstr "Site Lockout Notification"
 
-#: core/lockout.php:1227
+#: core/lockout.php:1250
 msgid "Permanently"
 msgstr "Permanently"
 
-#: core/lockout.php:1112
+#: core/lockout.php:1136
 msgid "The selected lockouts have been cleared."
 msgstr "The selected lockouts have been cleared."
 
-#: core/lockout.php:1010
+#: core/lockout.php:1034
 msgid "Host or User Lockout"
 msgstr "Host or User Lockout"
 
-#: core/lockout.php:883 core/lockout.php:912
+#: core/lockout.php:898 core/lockout.php:927
 msgid "White Listed"
 msgstr "White Listed"
 
-#: core/lockout.php:530 core/lockout.php:540
+#: core/lockout.php:545 core/lockout.php:555
 msgid "no"
 msgstr "no"
 
-#: core/lockout.php:530 core/lockout.php:540
+#: core/lockout.php:545 core/lockout.php:555
 msgid "yes"
 msgstr "yes"
 
-#: core/lockout.php:528
+#: core/lockout.php:543
 msgid "Your current settings are configured as follows:"
 msgstr "Your current settings are configured as follows:"
 
-#: core/lockout.php:524
+#: core/lockout.php:539
 msgid "About Lockouts"
 msgstr "About Lockouts"
 
-#: core/lockout.php:458 core/modules/global/settings.php:11
+#: core/lockout.php:461 core/modules/global/settings.php:11
 msgid "You have been locked out due to too many invalid login attempts."
 msgstr "You have been locked out due to too many invalid login attempts."
 
-#: core/lockout.php:412
+#: core/lockout.php:415
 msgid "A whitelisted host has triggered a lockout condition but was not locked out."
 msgstr "A whitelisted host has triggered a lockout condition but was not locked out."
 
@@ -3962,15 +3974,15 @@ msgstr "iThemes Security can log events in multiple ways, each with advantages a
 msgid "How should event logs be kept"
 msgstr "How should event logs be kept"
 
-#: core/modules/global/validator.php:62
+#: core/modules/global/validator.php:63
 msgid "Both"
 msgstr "Both"
 
-#: core/modules/global/validator.php:61
+#: core/modules/global/validator.php:62
 msgid "File Only"
 msgstr "File Only"
 
-#: core/modules/global/validator.php:60
+#: core/modules/global/validator.php:61
 msgid "Database Only"
 msgstr "Database Only"
 
@@ -4046,7 +4058,7 @@ msgstr "You can use HTML in your message. Allowed tags include: a, br, em, stron
 msgid "The message to display to a user when their IP has been flagged as bad by the iThemes network."
 msgstr "The message to display to a user when their IP has been flagged as bad by the iThemes network."
 
-#: core/lockout.php:450 core/modules/global/settings.php:12
+#: core/lockout.php:453 core/modules/global/settings.php:12
 msgid "Your IP address has been flagged as a threat by the iThemes Security network."
 msgstr "Your IP address has been flagged as a threat by the iThemes Security network."
 
@@ -4054,7 +4066,7 @@ msgstr "Your IP address has been flagged as a threat by the iThemes Security net
 msgid "How many days should a lockout be remembered to meet the blacklist count above."
 msgstr "How many days should a lockout be remembered to meet the blacklist count above."
 
-#: core/modules/backup/settings-page.php:150
+#: core/modules/backup/settings-page.php:149
 #: core/modules/global/settings-page.php:130
 #: core/modules/global/settings-page.php:175
 msgid "Days"
@@ -4080,17 +4092,17 @@ msgstr "Enable Blacklist Repeat Offender"
 msgid "Allow iThemes to track plugin usage via anonymous data."
 msgstr "Allow iThemes to track plugin usage via anonymous data."
 
-#: core/admin-pages/page-logs.php:120 core/lockout.php:1108
+#: core/admin-pages/page-logs.php:120 core/lockout.php:1132
 msgid "Security error!"
 msgstr "Security error!"
 
 #: core/modules/global/settings-page.php:224
-#: core/modules/global/validator.php:31
+#: core/modules/global/validator.php:32
 msgid "Hide Security Menu in Admin Bar"
 msgstr "Hide Security Menu in Admin Bar"
 
 #: core/modules/global/settings-page.php:216
-#: core/modules/global/validator.php:30
+#: core/modules/global/validator.php:31
 msgid "Override Proxy Detection"
 msgstr "Override Proxy Detection"
 
@@ -4100,7 +4112,7 @@ msgid "NGINX Conf File"
 msgstr "NGINX Conf File"
 
 #: core/modules/global/settings-page.php:199
-#: core/modules/global/validator.php:29
+#: core/modules/global/validator.php:30
 msgid "Allow Data Tracking"
 msgstr "Allow Data Tracking"
 
@@ -4110,27 +4122,27 @@ msgid "Add InfiniteWP Compatibility"
 msgstr "Add InfiniteWP Compatibility"
 
 #: core/modules/global/settings-page.php:180
-#: core/modules/global/validator.php:38
+#: core/modules/global/validator.php:39
 msgid "Path to Log Files"
 msgstr "Path to Log Files"
 
 #: core/modules/global/settings-page.php:172
-#: core/modules/global/validator.php:43
+#: core/modules/global/validator.php:44
 msgid "Days to Keep Database Logs"
 msgstr "Days to Keep Database Logs"
 
 #: core/modules/global/settings-page.php:164
-#: core/modules/global/validator.php:46
+#: core/modules/global/validator.php:47
 msgid "Log Type"
 msgstr "Log Type"
 
 #: core/modules/global/settings-page.php:143
-#: core/modules/global/validator.php:48
+#: core/modules/global/validator.php:49
 msgid "Lockout White List"
 msgstr "Lockout White List"
 
 #: core/modules/global/settings-page.php:135
-#: core/modules/global/validator.php:42
+#: core/modules/global/validator.php:43
 msgid "Lockout Period"
 msgstr "Lockout Period"
 
@@ -4139,32 +4151,32 @@ msgid "Blacklist Lookback Period"
 msgstr "Blacklist Lookback Period"
 
 #: core/modules/global/settings-page.php:119
-#: core/modules/global/validator.php:40
+#: core/modules/global/validator.php:41
 msgid "Blacklist Threshold"
 msgstr "Blacklist Threshold"
 
 #: core/modules/global/settings-page.php:111
-#: core/modules/global/validator.php:28
+#: core/modules/global/validator.php:29
 msgid "Blacklist Repeat Offender"
 msgstr "Blacklist Repeat Offender"
 
 #: core/modules/global/settings-page.php:103
-#: core/modules/global/validator.php:36
+#: core/modules/global/validator.php:37
 msgid "Community Lockout Message"
 msgstr "Community Lockout Message"
 
 #: core/modules/global/settings-page.php:95
-#: core/modules/global/validator.php:35
+#: core/modules/global/validator.php:36
 msgid "User Lockout Message"
 msgstr "User Lockout Message"
 
 #: core/modules/global/settings-page.php:87
-#: core/modules/global/validator.php:34
+#: core/modules/global/validator.php:35
 msgid "Host Lockout Message"
 msgstr "Host Lockout Message"
 
 #: core/modules/global/settings-page.php:79
-#: core/modules/global/validator.php:27
+#: core/modules/global/validator.php:28
 msgid "Write to Files"
 msgstr "Write to Files"
 
@@ -4184,15 +4196,15 @@ msgstr "Quick ban IP. Will be updated on next formal rules save."
 msgid "wp-config.php Rules"
 msgstr "wp-config.php Rules"
 
-#: core/modules/global/active.php:49
+#: core/modules/global/active.php:53
 msgid "Get Free API Key"
 msgstr "Get a Free API Key"
 
-#: core/modules/global/active.php:48
+#: core/modules/global/active.php:52
 msgid "New! Take your site security to the next level by activating iThemes Brute Force Network Protection."
 msgstr "New! Take your site security to the next level by activating iThemes Brute Force Network Protection."
 
-#: core/admin-pages/init.php:29 core/core.php:348
+#: core/admin-pages/init.php:29 core/core.php:402
 msgid "Security"
 msgstr "Security"
 
@@ -4208,7 +4220,7 @@ msgstr "Go Pro"
 msgid "Pro"
 msgstr "Pro"
 
-#: core/admin-pages/init.php:32 core/core.php:375
+#: core/admin-pages/init.php:32 core/core.php:429
 msgid "Logs"
 msgstr "Logs"
 
@@ -4216,12 +4228,12 @@ msgstr "Logs"
 msgid "Advanced"
 msgstr "Advanced"
 
-#: core/admin-pages/init.php:29 core/admin-pages/init.php:30 core/core.php:300
-#: core/core.php:357
+#: core/admin-pages/init.php:29 core/admin-pages/init.php:30 core/core.php:354
+#: core/core.php:411
 msgid "Settings"
 msgstr "Settings"
 
-#. #-#-#-#-#  better-wp-security-code.pot (iThemes Security 6.7.0)  #-#-#-#-#
+#. #-#-#-#-#  better-wp-security-code.pot (iThemes Security 6.8.0)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: better-wp-security.php:34 core/admin-pages/page-logs.php:253
 #: core/admin-pages/page-settings.php:462
