@@ -1,0 +1,110 @@
+.fa.fa-quote-right {
+	position: absolute;
+	text-align: center;
+	left: 50%;
+	transform: translateX(-50%);
+	background: #fff;
+	top: -21px;
+	padding: 10px 10px 8px;
+	border: 1px solid #95ebff;
+	border-radius: 200px;
+	font-size: 20px;
+}
+
+.index-post-box {
+	border: 1px solid #56c8e2;
+	background: #fff;
+}
+
+.grid-inner {
+	padding: 20px;
+}
+
+.grid img {
+	width: 100%;
+}
+
+.grid h3, .grid h3 {
+	color: #333;
+	margin: 0 0 15px 0;
+	font-size: 20px;
+	transition: .25s ease-in;
+}
+
+.grid p {
+	font-size: 14px;
+	margin: 0 0 10px 0;
+}
+
+.grid .grid-inner p:last-child {
+	margin-bottom: 0;
+}
+
+.grid, .grid {
+	width: 100%;
+	margin: auto;
+}
+
+/* ---- grid ---- */
+
+.grid {
+  width: 100%;
+}
+
+.gutter-sizer {
+	width: 3%;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.testimonial-container .grid-item {
+	border: 1px solid #e9e9e9;
+}
+
+.index-post-box.light-grey {
+	background-image: url(../images/box-gradient.png);
+	background-size: 100% 100%;
+	box-shadow: none;
+	border-color: #95ebff;
+}
+
+/* ---- .grid-item ---- */
+
+@media (min-width: 800px) {
+
+.grid-sizer,
+.grid-item {
+  width: 31.333%;
+}
+}
+
+.grid-item {
+ margin-bottom: 3%;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+  min-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 540px) {
+.grid-sizer, .grid-item, .grid-sizer, .grid-item {
+	width: 100%;
+}
+.grid-item {
+ margin-bottom: 5%;
+}
+}
+
+@media (min-width: 540px) and (max-width: 800px) {
+.grid-sizer, .grid-item, .grid-sizer, .grid-item {
+	width: 48.5%;
+}
+}

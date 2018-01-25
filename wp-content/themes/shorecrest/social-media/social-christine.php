@@ -1,0 +1,1 @@
+<a href="https://www.linkedin.com/in/christine-carson-7614589/" target="_blank"><i class="fa fa-linkedin-square"></i></a><a href="mailto:ccarson@shorecrestgroup.com"><i class="fa fa-envelope"></i></a>

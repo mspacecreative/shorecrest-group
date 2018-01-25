@@ -1,0 +1,473 @@
+body.push header {
+	transform: translateX(-250px);
+	-webkit-transform: translateX(-250px);
+	-ms-transform: translateX(-250px);
+	transition: transform 0.5s;
+	-webkit-transition: -webkit-transform 0.5s;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background: #fff;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 10;
+	right: 0;
+	transform: translateX(0);
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transition: transform 0.5s;
+	-webkit-transition: -webkit-transform 0.5s;
+}
+
+.nav-container li.menu-item-has-children span.sub-toggle {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #000;
+  line-height: 52px;
+  background: rgba(255, 255, 255, .25);
+  padding: 0 10px;
+  z-index: 10;
+  height: 52px;
+  width: 52px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.home header {
+	opacity: 0;
+}
+
+header.shrink {
+	transition: transform 0.5s;
+	-webkit-transition: -webkit-transform 0.5s;
+	z-index: 10;
+	-moz-box-shadow: 0 2px 5px #888;
+	-webkit-box-shadow: 0 2px 5px #888;
+	box-shadow: 0 2px 5px #888;
+}
+
+.home header.shrink {
+	opacity: 1;
+}
+
+.main-container.push {
+	width: 100%;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+
+.logo {
+	float: left;
+}
+
+.clearfix:after {
+	display: table;
+	content: '';
+	clear: both;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+.toggle-button {
+	float: right;
+	top: 25px;
+	position: relative;
+}
+
+.logo h1 {
+	color: #fff;
+}
+
+.nav-container {
+	position: fixed;
+	transform: translateX(250px);
+	-webkit-transform: translateX(250px);
+	-ms-transform: translateX(250px);
+	transition: transform 0.5s;
+	-webkit-transition: -webkit-transform 0.5s;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 250px;
+	background-image: url(../images/nav-bg.jpg);
+	overflow: scroll;
+}
+
+body.push .nav-container {
+	transition: transform 0.5s;
+	-webkit-transition: -webkit-transform 0.5s;
+	transform: translateX(0);
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transition: transform 0.5s;
+	-webkit-transition: -webkit-transform 0.5s;
+}
+
+body.push {
+	overflow-y: hidden;
+}
+nav {
+	padding: 30px 0;
+}
+.wrapper {
+	width: 100%;
+	position: relative;
+	height: 100%;
+	transform: translateX(0);
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transition: transform 0.5s;
+	-webkit-transition: -webkit-transform 0.5s;
+	right: 0;
+}
+
+body.push .wrapper {
+	transform: translateX(-250px);
+	-webkit-transform: translateX(-250px);
+	-ms-transform: translateX(-250px);
+	transition: transform 0.5s;
+	-webkit-transition: -webkit-transform 0.5s;
+}
+.main-container {
+	position: relative;
+}
+
+.main-container .wrap-inner {
+	margin: 5% 0;
+}
+.inner {
+	width: 90%;
+	margin: auto;
+	position: relative;
+	max-width: 1280px;
+}
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+}
+nav li {
+	border-bottom: 1px solid #54b6cc;
+	display: block;
+	position: relative;
+}
+nav ul ul {
+	display: none;
+}
+nav li li {
+	padding: 0 0 0 15px;
+	background: #0b6372;
+	border-bottom: 1px solid rgba(255,255,255,.15);
+}
+nav a {
+	color: #fff;
+	padding: 15px 25px;
+	display: block;
+}
+
+.sidebar ul {
+	list-style: none;
+	padding: 0 1em;
+}
+
+.content .sidebar li {
+	margin: 0;
+}
+
+.sidebar li:before {
+	content: "";
+	border-color: transparent #56c8e2;
+	border-style: solid;
+	border-width: 0.35em 0 0.35em 0.45em;
+	display: block;
+	height: 0;
+	width: 0;
+	left: -1em;
+	top: .85em;
+	position: relative;
+}
+
+.sidebar ul ul {
+	margin-top: 0;
+}
+
+.border-menu {
+  position: relative;
+  padding-left: 1.25em;
+  line-height: 37px;
+}
+.border-menu:before {
+  content: "";
+  position: absolute;
+  top: 0.25em;
+  left: 0;
+  width: 1em;
+  height: 0.125em;
+  border-top: 0.375em double #fff;
+  border-bottom: 0.125em solid #fff;
+}
+
+.toggle {
+	cursor: pointer;
+}
+
+#nav-icon3 {
+  width: 30px;
+  height: 17px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+#nav-icon3 span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #56c8e2;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#nav-icon3 span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
+  top: 7px;
+}
+
+#nav-icon3 span:nth-child(4) {
+  top: 14px;
+}
+
+#nav-icon3.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+#nav-icon3.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#nav-icon3.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#nav-icon3.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.desktop-menu {
+	float: right;
+}
+
+.sub-menu li {
+	padding: 0;
+	width: 100%;
+	transition: all .75s ease;
+}
+
+.desktop-menu .sub-menu li a {
+	display: block;
+	color: #fff;
+	margin: 0;
+}
+
+.desktop-menu .sub-menu li a:hover {
+	background: rgba(255, 255, 255, .25);
+}
+
+.sub-menu li:hover {
+	transition: all .75s ease;
+}
+
+.desktop-menu li.menu-item-has-children:hover .sub-menu {
+	opacity: 1;
+	transition: 0.25s ease-in-out;
+}
+
+.desktop-menu li.menu-item-has-children a {
+	padding-right: 20px;
+}
+
+.desktop-menu li.menu-item-has-children.shrink a {
+	padding-right: 20px;
+}
+
+.desktop-menu .sub-menu {
+	background: #2B465B;
+	opacity: 0;
+	position: absolute;
+	left: 10px;
+	top: 100%;
+	border: 1px solid #e9e9e9;
+	transition: 0.25s ease-in-out;
+	min-width: 225px;
+	z-index: 11;
+}
+
+.desktop-menu ul {
+	margin: 0;
+	padding: 0;
+}
+
+.desktop-menu li {
+	float: left;
+	position: relative;
+  transition: 0.25s ease-in-out;
+}
+
+.desktop-menu li.shrink, .desktop-menu li.menu-item-has-children.shrink:after {
+	transition: 0.25s ease-in-out;
+}
+
+.desktop-menu li.menu-item-has-children.shrink:after {
+	line-height: 42px;
+}
+
+.desktop-menu .sub-menu li.shrink a, .desktop-menu .sub-menu li a {
+	padding: 5px 20px;
+}
+
+.desktop-menu .sub-menu li:first-child.shrink a, .desktop-menu .sub-menu li:first-child a {
+	padding-top: 15px;
+}
+
+.desktop-menu .sub-menu li:last-child.shrink a, .desktop-menu .sub-menu li:last-child a {
+	padding-bottom: 15px;
+}
+
+.desktop-menu li.shrink a {
+	padding: 10px 0;
+	transition: 0.25s ease-in-out;
+}
+
+.desktop-menu li.menu-item-has-children:after {
+	top: 0;
+	right: 20px;
+	color: inherit;
+	transition: 0.25s ease-in-out;
+	font-family: fontAwesome;
+	content: '\f107';
+	position: absolute;
+	line-height: 72px;
+}
+
+.desktop-menu a {
+	color: #333;
+	display: block;
+	margin: 0 20px;
+	padding: 25px 0;
+	transition: 0.25s ease-in-out;
+}
+
+.desktop-menu li:last-child a {
+	margin-right: 0;
+}
+
+footer {
+	background-image: url(../images/footer-wave-texture.jpg);
+	color: #fff;
+	position: relative;
+}
+
+footer h2 {
+	margin: 0;
+}
+
+.main-container footer p, .home .main-container footer p {
+	font-size: 15px;
+}
+
+.center {
+	text-align: center;
+}
+
+li.menu-item-has-children.rotate:after {
+	transform: rotate(180deg);
+	transition: 0.25s ease;
+}
+
+@media (max-width: 736px) {
+
+.logo h1 {
+	font-size: 25px;
+}
+
+.logo img {
+	height: 30px;
+	padding: 0;
+}
+
+.toggle-button {
+	top: 6px;
+}
+
+.logo h1 {
+  line-height: 30px;
+}
+}
+
+@media (min-width: 980px) {
+
+.toggle-button {
+	display: none;
+}
+
+.logo img {
+	transition: .25s ease-in-out;
+}
+
+.logo img.shrink {
+	height: 42px;
+	transition: .25s ease-in-out;
+	padding: 10px 0;
+}
+}
+
+@media (max-width: 980px) {
+
+.desktop-menu {
+	display: none;
+}
+}

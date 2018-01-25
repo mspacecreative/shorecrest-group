@@ -1,0 +1,1 @@
+<a href="https://www.linkedin.com/in/suzanne-makhan-12273143/" target="_blank"><i class="fa fa-linkedin-square"></i></a><a href="mailto:smakhan@shorecrestgroup.com"><i class="fa fa-envelope"></i></a>

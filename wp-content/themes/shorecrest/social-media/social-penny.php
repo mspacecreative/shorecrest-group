@@ -1,0 +1,1 @@
+<a href="https://www.linkedin.com/in/penny-rice-7663228/" target="_blank"><i class="fa fa-linkedin-square"></i></a><a href="mailto:price@shorecrestgroup.com"><i class="fa fa-envelope"></i></a>
