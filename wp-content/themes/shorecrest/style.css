@@ -2782,3 +2782,22 @@ h2.index-post-title {
 .page-template-page-fullwidth .page-header-image .inner, .page-template-page-profiles .page-header-image .inner {
 	max-width: 960px;
 }
+
+.taggbox-container.hide-button .ff-filter-holder {
+	display: none!important;
+}
+
+.taggbox-container span.ff-filter a {
+	border: none!important;
+}
+
+#social-wall:before {
+	width: 100%;
+	height: 80px;
+	background: #fff;
+	content: '';
+	position: absolute;
+	z-index: 999;
+	left: 0;
+	top: 0;
+}
